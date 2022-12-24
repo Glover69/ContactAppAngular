@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'semantic-ui-css/semantic.css';
+
+.light-theme{
+    --background-color: #ececec;
+    --text-color: #000000;
+    --box-color: #fff;
+    --searchplaceholder: #c2c2c2;
+    --threeoptionsborder: rgba(255,255,255,0.4);
+    --border-color: #c2c2c2;
+    --button-color: #4183C4;
+    --button-text-color: #fff;
+}
+
+
+.dark-theme{
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --box-color: #1c1c1e;
+    --border-color: #1c1c1e;
+    --button-color: #1c1c1e;
+    --button-text-color: #fff;
+   
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+

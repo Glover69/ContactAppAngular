@@ -1,0 +1,45 @@
+<section class="flex-container">
+
+   
+
+    <section class="app-container">
+
+        <app-contact-header-bar></app-contact-header-bar>
+        <app-searchbox></app-searchbox>
+        <br/>
+        <app-contact-card></app-contact-card>
+    
+    
+        
+        <app-letter-symbols [letter]="'A'"></app-letter-symbols>
+        
+        <app-single-contact></app-single-contact>
+<br/>
+
+<button class="toggle" (click)="switchTheme()">{{theme === 'light-theme' ? 'Switch to dark' : 'Switch to light'}}
+   
+    
+  
+</button>
+        
+        <!--
+        <app-letter-symbols [letter]="'B'"></app-letter-symbols>
+        
+        <app-letter-symbols [letter]="'D'"></app-letter-symbols>
+
+        -->
+
+       
+        </section>
+
+        
+        <section  *ngIf="status">        
+         
+            <app-contact-detailed [Info]="getInfo()" ></app-contact-detailed>
+            
+        
+    </section>
+
+        
+</section>
+

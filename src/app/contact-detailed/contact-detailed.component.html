@@ -1,0 +1,69 @@
+<div class="contact-body">
+
+  <div class="detailcontact-upper-bar">
+    <div class="ui-header">
+    <a href="/"><i class="fa-solid fa-angle-left"></i>Contacts</a>
+    </div>
+
+
+     <a href="#">Edit</a>
+   
+</div>
+
+    <img src="{{Info?.profileImg}}" alt="">
+
+
+     <h2>{{Info?.fullName || ""}}</h2>
+
+     <div class="action-buttons">
+
+        <div class="call-button">
+     <a href="#">
+        
+      <h2><i class="fa-solid fa-phone"></i> call</h2>
+      
+    </a>
+     </div>
+
+     <div class="message-button">
+     <a href="#">
+        
+    <h2><i class="fa-solid fa-message"></i> message</h2>
+      </a>
+     </div>
+
+     <div class="video-button">
+        <a href="#">
+           
+       <h2><i class="fa-solid fa-video"></i> video</h2>
+         </a>
+    </div>
+
+    <div class="email-button">
+        <a href="#">
+               
+        <h2><i class="fa-solid fa-envelope"></i> mail</h2>
+        </a>
+    </div>
+    
+
+
+     </div>
+
+     
+
+     <section class="phonenumberdisplay">
+      <h4>mobile</h4>
+      <a href=""><h5 class="phoneNo">{{Info?.phoneNumber || ""}}</h5></a>
+      </section>
+
+      <section class="emaildisplay">
+        <h4>email</h4>
+        <a href=""><h5 class="emailAdd">{{Info?.emailAdd || ""}}</h5></a>
+        </section>
+
+
+          <app-phonenumber-display></app-phonenumber-display>
+ 
+     </div>
+

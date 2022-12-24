@@ -1,0 +1,23 @@
+.ui-contact-upper-bar{
+    display: flex;
+    max-width: 97%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.ui-contact-upper-bar .ui-header h2{
+    font-size: 60px;
+    margin-left: 35px;
+    margin-top: 10px;
+    
+}
+
+
+a img{
+    position: relative;
+    top: 5px;
+}

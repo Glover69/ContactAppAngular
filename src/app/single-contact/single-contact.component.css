@@ -1,0 +1,17 @@
+.ui-single-contact{
+    border-top-style: solid;
+    border-color: var(--border-color);
+    width: 95%;
+    position: relative;
+    left: 2%;
+    top: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
+
+.ui-single-contact h4{
+    font-size: 20px;
+    cursor: pointer;
+    
+}

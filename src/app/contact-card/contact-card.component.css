@@ -1,0 +1,43 @@
+.ui-contact-card{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0rem;
+    border-top-style: solid;
+    border-color: var(--border-color);
+    width: 95%;
+    position: relative;
+    left: 2%;
+    top: 3%;
+    padding-top: 15px;
+  
+}
+
+.ui-contact-card .ui-profile-image{
+    
+   grid-column: 1/1;
+}
+
+.ui-contact-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.ui-contact-card .ui-profiletext{
+    position: relative;
+    left: 20px;
+   grid-column: 2/8;
+   
+}
+
+.ui-profiletext h2{
+    font-size: 40px;
+    line-height: 130px;
+}
+
+.ui-profiletext h3{
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    opacity: 0.5;
+}
