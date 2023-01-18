@@ -46,6 +46,10 @@
     display: flex;
 }
 
+.editButton{
+    cursor: pointer;
+}
+
 .action-buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

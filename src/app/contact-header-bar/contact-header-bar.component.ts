@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog'
+
 
 @Component({
   selector: 'app-contact-header-bar',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-header-bar.component.css']
 })
 export class ContactHeaderBarComponent {
+
+
 
 }

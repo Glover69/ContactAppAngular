@@ -3,5 +3,6 @@ export interface Info{
     profileImg: string,
     fullName: string,
     phoneNumber: string,
-    emailAdd: string
+    emailAdd: string,
+    id: string
 }

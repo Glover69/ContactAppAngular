@@ -10,7 +10,18 @@ import { SingleContactComponent } from './single-contact/single-contact.componen
 import { LetterSymbolsComponent } from './letter-symbols/letter-symbols.component';
 import { PhonenumberDisplayComponent } from './phonenumber-display/phonenumber-display.component';
 import { TogglebtnComponent } from './togglebtn/togglebtn.component';
-import { AddContactComponent } from './add-contact/add-contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { DialogboxaddcomponentComponent } from './dialogboxaddcomponent/dialogboxaddcomponent.component';
+import { DialogboxeditComponent } from './dialogboxedit/dialogboxedit.component';
+import { EditdialogtextService } from './editdialogtext.service';
+import { NavigationmainComponent } from './navigationmain/navigationmain.component';
+import { ServicesService } from './lib/services/services.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -24,13 +35,27 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     routingComponents,
     PhonenumberDisplayComponent,
     TogglebtnComponent,
-    AddContactComponent
+    DialogboxaddcomponentComponent,
+    DialogboxeditComponent,
+    NavigationmainComponent
   ],
+
+  entryComponents: [
+    DialogboxaddcomponentComponent
+  ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatDialogModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [EditdialogtextService, ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

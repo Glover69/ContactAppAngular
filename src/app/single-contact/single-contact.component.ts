@@ -1,4 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
+import { ServicesService } from '../lib/services/services.service';
+import { EventEmitter } from '@angular/core';
+import { Contact } from '../lib/models/contact.model';
 
 @Component({
   selector: 'app-single-contact',
@@ -12,7 +15,18 @@ export class SingleContactComponent {
   {name: "Angela"}
  ]
 
-updateUrl(det : any){
-  window.location.href = "/?filter="+ det.name
+ @Output() contactSelected = new EventEmitter();
+
+ constructor(
+  public contactsService : ServicesService
+ ){
+
+ }
+
+updateUrl(contact : Contact){
+  // window.location.href = "/?filter="+ det.name
+  // emit selected
+  this.contactSelected.emit(contact)
+
 }
 }

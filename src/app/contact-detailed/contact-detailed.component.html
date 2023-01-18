@@ -1,19 +1,19 @@
 <div class="contact-body">
 
   <div class="detailcontact-upper-bar">
-    <div class="ui-header">
-    <a href="/"><i class="fa-solid fa-angle-left"></i>Contacts</a>
+    <div class="ui-header" >
+    <a (click)="closeDetailed()"><i class="fa-solid fa-angle-left"></i>Contacts</a>
     </div>
 
-
-     <a href="#">Edit</a>
-   
+    <div>
+     <a  class="editButton" routerLink="edit/:id">Edit</a>
+   </div>
 </div>
 
-    <img src="{{Info?.profileImg}}" alt="">
+    <img src="{{contact?.image}}" alt="">
 
 
-     <h2>{{Info?.fullName || ""}}</h2>
+     <h2>{{contact.firstname + " " + contact.lastname || ""}}</h2>
 
      <div class="action-buttons">
 
@@ -54,12 +54,12 @@
 
      <section class="phonenumberdisplay">
       <h4>mobile</h4>
-      <a href=""><h5 class="phoneNo">{{Info?.phoneNumber || ""}}</h5></a>
+      <a href=""><h5 class="phoneNo">{{contact.number || ""}}</h5></a>
       </section>
 
       <section class="emaildisplay">
         <h4>email</h4>
-        <a href=""><h5 class="emailAdd">{{Info?.emailAdd || ""}}</h5></a>
+        <a href=""><h5 class="emailAdd">{{contact.email || ""}}</h5></a>
         </section>
 
 

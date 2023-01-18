@@ -1,5 +1,5 @@
-.flex-container{
-    overflow: hidden;
+:host{
+  overflow-y: hidden;
 }
 
 .flex-container{
@@ -15,18 +15,29 @@
 }
 
 
-
 .toggle {
     position: relative;
     display: inline-block;
     width: 120px;
+    top: 60px;
     border: 0;
     border-radius: 10px;
     height: 34px;
     transform: translate(50px, 300px);
     background-color: var(--button-color);
     color: var(--button-text-color);
+    z-index: 2;
   }
   
 
+  .addContactlink{
+    float: right;
+    border: 0;
+    cursor: pointer;
+  }
+  .addContactlink img{
+    position: relative;
+    top: 28px;
+    right: 10px;
+}
 

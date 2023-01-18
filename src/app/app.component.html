@@ -1,10 +1,16 @@
 <section class="flex-container">
+    
 
    
 
     <section class="app-container">
-
-        <app-contact-header-bar></app-contact-header-bar>
+        
+        <a class="addContactlink" (click)="addContactDialog()">
+        <img src="/assets/images/Plus Math.png" alt="">
+        </a>
+    
+        
+        <app-contact-header-bar> </app-contact-header-bar>
         <app-searchbox></app-searchbox>
         <br/>
         <app-contact-card></app-contact-card>
@@ -13,7 +19,7 @@
         
         <app-letter-symbols [letter]="'A'"></app-letter-symbols>
         
-        <app-single-contact></app-single-contact>
+        <app-single-contact (contactSelected)="receiveContact($event)"></app-single-contact>
 <br/>
 
 <button class="toggle" (click)="switchTheme()">{{theme === 'light-theme' ? 'Switch to dark' : 'Switch to light'}}
@@ -29,17 +35,23 @@
 
         -->
 
-       
+        <app-navigationmain></app-navigationmain>
         </section>
 
         
-        <section  *ngIf="status">        
+        <section *ngIf="currentContact" >        
          
-            <app-contact-detailed [Info]="getInfo()" ></app-contact-detailed>
+            <app-contact-detailed (detailedClosed)="closedDetailed()" [contact]="currentContact" ></app-contact-detailed>
             
         
     </section>
 
+
+
+
+
+    
         
 </section>
+
 

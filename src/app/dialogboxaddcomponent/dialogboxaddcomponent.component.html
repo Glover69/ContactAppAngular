@@ -1,0 +1,52 @@
+<section class="entireDialog">
+
+<div class="ui-contact-upper-bar">
+
+    
+    
+
+    <div class="detailcontact-upper-bar">
+        <div class="ui-header">
+        <a (click)="hidePopUp()">Cancel</a>
+        </div>
+
+        <div class="ui-header">
+            <h2>New Contact</h2>
+            </div>
+    
+    <div class="ui-header">
+         <a (click)="addContact()">Done</a>
+         </div>
+       
+    </div>
+
+
+     
+   
+</div>
+
+<section class="profileImage">
+    <img [src]="profileImage" alt="">
+
+    <div class="button-wrap">
+     <a class="addImageProfile" for="upload-btn">Add Image</a>
+    <input type="file" accept="image/png, image/jpeg" class="upload-btn" (change)="selectImage($event)"  required>
+ </div>
+    
+</section>
+
+<section class="contactFill">
+    
+    <div class="nameinputFields">
+    
+    <input type="text" [(ngModel)]="firstname"  placeholder="First Name"/>
+    <input type="text" [(ngModel)]="lastname" placeholder="Last Name">
+    </div>
+
+    <div class="subinputFields">
+    <input type="text" [(ngModel)]="number" placeholder="Add Phone" [maxLength]="10">
+    <input type="email" [(ngModel)]="email" placeholder="Add Email">
+    </div>
+
+    </section>
+

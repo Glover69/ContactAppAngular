@@ -8,8 +8,11 @@
     --searchplaceholder: #c2c2c2;
     --threeoptionsborder: rgba(255,255,255,0.4);
     --border-color: #c2c2c2;
+    --border-color: #c2c2c2;
     --button-color: #4183C4;
     --button-text-color: #fff;
+    --box-colorTwo: #fff;
+    --border-colorTwo: #6d6d6d;
 }
 
 
@@ -20,12 +23,14 @@
     --border-color: #1c1c1e;
     --button-color: #1c1c1e;
     --button-text-color: #fff;
+    /* --box-colorTwo: rgba(61, 61, 66, 0.5); */
+    --box-colorTwo: transparent;
+    --border-colorTwo: #6d6d6d;
    
 }
 
-body{
-    width: 100%;
-    height: 100%;
-}
 
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

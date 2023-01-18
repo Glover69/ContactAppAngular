@@ -1,0 +1,141 @@
+.entireDialog{
+    background-color: var(--box-color);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.ui-contact-upper-bar{
+    
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.ui-header{
+    text-align: center;
+}
+
+
+.detailcontact-upper-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailcontact-upper-bar h2{
+  color: var(--text-color);
+}
+
+.detailcontact-upper-bar .ui-header{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.detailcontact-upper-bar .ui-header a{
+    font-size: 20px;
+
+}
+
+.ui-header:nth-of-type(3){
+    margin-right: 25px;
+}
+
+section img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.profileImage{
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImage img{
+    border-radius: 150px;
+}
+
+.profileImage .addphotolink{
+    font-size: 20px;
+}
+
+.button-wrap{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.addImageProfile{
+  font-size: 16px;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  
+  
+}
+
+.nameinputFields{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.subinputFields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.subinputFields input{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid var(--border-colorTwo);
+    height: 55px;
+    margin-bottom: 20px;
+    background-color: var(--box-colorTwo);
+    font-family: 'Rubik';
+    padding: 25px;
+    background-image: url('/assets/images/Add.png');
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
+input{
+    color: var(--text-color);
+    
+}
+
+
+.contactFill{
+    margin-top: 20px;
+}
+
+.nameinputFields input{
+    border: 0;
+    border-bottom: 1px solid  var(--border-colorTwo);
+    height: 50px;
+    width: 40%;
+    background-color: var(--box-colorTwo);
+    font-family: 'Rubik';
+    padding: 25px;
+}
+
+input:focus{
+    outline: none;
+}
+

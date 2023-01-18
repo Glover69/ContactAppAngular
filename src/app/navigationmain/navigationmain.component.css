@@ -1,0 +1,8 @@
+.navigation-rounded{
+    width: 100%;
+    height: 70px;
+    background: var(--box-color);
+    position: relative;
+    top: 310px;
+
+}

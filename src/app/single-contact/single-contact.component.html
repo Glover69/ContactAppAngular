@@ -1,7 +1,7 @@
 
-    <div class="ui-single-contact" *ngFor="let det of details">
+    <div class="ui-single-contact" *ngFor="let det of contactsService.contacts">
 
-   <a (click)="updateUrl(det)"><h4>{{det.name}}</h4></a>
+   <a (click)="updateUrl(det)"><h4>{{det.firstname}}</h4></a>
 
 
     </div>
