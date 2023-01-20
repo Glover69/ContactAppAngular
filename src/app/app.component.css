@@ -1,6 +1,4 @@
-:host{
-  overflow-y: hidden;
-}
+
 
 .flex-container{
     display: flex;
@@ -9,17 +7,18 @@
 .app-container{
     width: 100%;
     border-right: 2px solid var(--border-color);
-    height: 100vh;
+    height: 100%;
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
 
 
 .toggle {
     position: relative;
     display: inline-block;
     width: 120px;
-    top: 60px;
+    top: 100px;
     border: 0;
     border-radius: 10px;
     height: 34px;
@@ -41,3 +40,11 @@
     right: 10px;
 }
 
+app-navigationmain{
+  position: relative;
+  top: 300px;
+}
+
+.contactListArea{
+  height: 15%;
+}

@@ -104,7 +104,7 @@ input[type="file"] {
     background-color: var(--box-colorTwo);
     font-family: 'Rubik';
     padding: 25px;
-    background-image: url('/assets/images/Add.png');
+    /* background-image: url('/assets/images/Add.png'); */
     background-position: 5px 10px;
     background-repeat: no-repeat;
     padding-left: 70px;
@@ -134,3 +134,19 @@ input:focus{
     outline: none;
 }
 
+
+.cancelBack:hover{
+    cursor: pointer;
+}
+
+.doneButton:hover{
+    cursor: pointer;
+}
+
+.addPhoneNo{
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

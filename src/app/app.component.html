@@ -16,10 +16,10 @@
         <app-contact-card></app-contact-card>
     
     
-        
+        <div class="contactListArea">
         <app-letter-symbols [letter]="'A'"></app-letter-symbols>
-        
         <app-single-contact (contactSelected)="receiveContact($event)"></app-single-contact>
+        </div>
 <br/>
 
 <button class="toggle" (click)="switchTheme()">{{theme === 'light-theme' ? 'Switch to dark' : 'Switch to light'}}
@@ -27,28 +27,16 @@
     
   
 </button>
-        
-        <!--
-        <app-letter-symbols [letter]="'B'"></app-letter-symbols>
-        
-        <app-letter-symbols [letter]="'D'"></app-letter-symbols>
+<app-navigationmain></app-navigationmain>
 
-        -->
-
-        <app-navigationmain></app-navigationmain>
         </section>
 
-        
         <section *ngIf="currentContact" >        
          
             <app-contact-detailed (detailedClosed)="closedDetailed()" [contact]="currentContact" ></app-contact-detailed>
             
         
-    </section>
-
-
-
-
+        </section>
 
     
         

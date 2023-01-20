@@ -7,7 +7,7 @@
 
     <div class="detailcontact-upper-bar">
         <div class="ui-header">
-        <a (click)="hidePopUp()">Cancel</a>
+        <a class="cancelBack" (click)="hidePopUp()">Cancel</a>
         </div>
 
         <div class="ui-header">
@@ -15,7 +15,7 @@
             </div>
     
     <div class="ui-header">
-         <a (click)="addContact()">Done</a>
+         <a class="doneButton" (click)="addContact()">Done</a>
          </div>
        
     </div>
@@ -44,9 +44,15 @@
     </div>
 
     <div class="subinputFields">
-    <input type="text" [(ngModel)]="number" placeholder="Add Phone" [maxLength]="10">
+        <div class="addPhoneNo">
+        <img src="/assets/images/Add.png" (click)="addPhone()" style="width: 20px; height:20px" />
+        <h3>Add Phone</h3>
+        </div>
+    <section *ngFor="let num of number; let count = index;">
+        <img src="/assets/images/Trash.png" (click)="removePhone()" style="width: 20px; height:20px" class="delContact" />
+        <input type="text" [(ngModel)]="number[count]" placeholder="Add Phone" [maxLength]="10">
+    </section>
     <input type="email" [(ngModel)]="email" placeholder="Add Email">
     </div>
 
     </section>
-

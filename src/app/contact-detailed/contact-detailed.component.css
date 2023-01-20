@@ -6,7 +6,7 @@
     padding-top: 30px;
     background-color: var(--background-color);
     color: var(--text-color);
-    height: 100vh;
+    height: 100%;
 }
 
 .detailcontact-upper-bar{
@@ -34,6 +34,10 @@
     
 }
 
+.contactBack:hover{
+    cursor: pointer;
+}
+
 .contact-body h2{
     font-size: 40px;
     display: flex;
@@ -46,9 +50,11 @@
     display: flex;
 }
 
-.editButton{
+.editButton:hover{
     cursor: pointer;
 }
+
+
 
 .action-buttons{
     display: grid;

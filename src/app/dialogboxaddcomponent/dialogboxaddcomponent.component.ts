@@ -17,7 +17,7 @@ export class DialogboxaddcomponentComponent implements OnInit{
   firstname = ""
   lastname = ""
   image = ""
-  number = ""
+  number = [""]
   email = ""
 
  constructor(
@@ -68,12 +68,21 @@ addContact(){
     number : this.number,
     email : this.email
   }
+
+  console.log(contact)
   this.contactService.addContact(contact);
 
   this.matDialogRef.close()
 
 }
 
+addPhone(){
+  this.number.push("")
+}
+
+removePhone(){
+  this.number.pop()
+}
 
 hidePopUp(){
   this.matDialogRef.close()

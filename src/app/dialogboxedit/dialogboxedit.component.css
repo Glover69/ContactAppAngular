@@ -1,6 +1,10 @@
+a:hover{
+cursor: pointer;
+}
+
 .entireDialog{
     background-color: var(--box-color);
-    height: 100vh;
+    height: 100%;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -35,6 +39,10 @@
 .detailcontact-upper-bar .ui-header{
     margin-left: 20px;
     margin-top: 30px;
+}
+
+#cancelButton:hover{
+    cursor: pointer;
 }
 
 .detailcontact-upper-bar .ui-header a{
